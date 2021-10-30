@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matras || UZ</title>
+    <link rel="icon" href="./images/icons/logo-doc.svg">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+
+<body>
+    <div class="shadow ">
+        <div class="order-card active">
+            <div class="active-card ">
+                <button class="close-order">
+                    <img src="./images/icons/x-button.svg" alt="">
+                </button>
+                <form action="" class="order">
+                    <h2>Buyurtma qilish</h2>
+                    <input type="text" class="name send-name" placeholder="Ismingizni yozing">
+                    <div class="number-wrapper">
+                        <input type="text" class="code" placeholder="998" disabled>
+                        <input type="text" class="number send-phone" placeholder="Raqamingizni yozing">
+                    </div>
+                    <div class="select-model">
+                        <label for="model">Mahsulotlarni toifasini tanlang</label>
+                        <select id="model">
+                            <option value="disable" disabled selected>Choose your product..</option>
+                        </select>
+                    </div>
+                    <div class="counter">
+                        <button class="minus-count">-</button>
+                        <p class="count">1</p>
+                        <button class="plus-count">+</button>
+                    </div>
+                    <button type="submit" class="submit" id="submit-order">Yuborish</button>
+                </form>
+            </div>
+            <div class="message-part">
+                <h2>Arizangiz muvaffaqiyatli yuborildi</h2>
+                <img src="./images/cong.png" alt="">
+                <p>Tez orada operatorlarimiz siz bilan bog’lanishadi</p>
+                <button class="close-order">Ok</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="intro" id="intro">
+        <header class="header-mobile">
+            <div class="container">
+                <a href="#">
+                    <img src="./images/icons/mobile-logo.svg" alt="">
+                </a>
+                <button class="burger-btn">
+                    <img src="./images/icons/burger-btn.svg" alt="" class="burger-btn-img active">
+                    <img src="./images/icons/x-btn.svg" alt="" class="burger-btn-img">
+                </button>
+            </div>
+        </header>
+        <div class="mobile-menu">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">Katalog</a>
+                    </li>
+                    <li>
+                        <a href="#">Aksiya</a>
+                    </li>  
+                    <li>
+                        <a href="#">Biz haqimizda</a>
+                    </li>
+                    <li>
+                        <a href="#">Manzilimiz</a>
+                    </li>
+                    <li>
+                        <a href="#">Aloqa</a>
+                    </li>
+                </ul>
+                <button class="btn order-open">
+                    Buyurtma berish
+                </button>
+                <div class="phone-link">
+                    <div class="container">
+                        <a href="tel:998 90 123 45 67">
+                            <img src="./images/icons/phone.svg" alt="">
+                            +998 90 123 45 67
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <ul>
+                        <li>
+                            <a href="#">Katalog</a>
+                        </li>
+                        <li>
+                            <a href="#">Aksiya</a>
+                        </li>
+                        <li>
+                            <a href="#">Aksiya</a>
+                        </li>
+                        <li>
+                            <a href="#">Manzilimiz</a>
+                        </li>
+                        <li>
+                            <a href="#">Aloqa</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-bottom-left">
+                        <img src="./images/icons/logo.svg" alt="">
+                    </div>
+                    <div class="header-bottom-right">
+                        <a href="tel: +998 90 123 45 67">
+                            <img src="./images/icons/phone.svg" alt="">
+                            +998 90 123 45 67
+                        </a>
+                        <button class="btn order-open">
+                            Buyurtma berish
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- <div class="container">
+            <div class="intro-slider">
+                <template id="slick-template">
+                    <div class="slick-box">
+                        <h1 class="slick-box-title ">Kechalari sokin dam oling</h1>
+                        <img class="slick-box-img" src="./images/slider.png" alt="">
+                        <a href="#pruducts" class="btn">
+                            Kategoriyalar
+                        </a>
+                    </div> 
+                </template>
+            </div>
+        </div> -->
+
+        <section id="hero" class="hero">
+            <div class="hero-inner container">
+                <div class="hero-inner__carousel">
+                    <div class="my-carousel" >
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    <section class="statistics">
+        <div class="container">
+            <ul class="wrapper" id="statistic-wrapper">
+            </ul>
+        </div>
+    </section>
+    <section class="products" id="pruducts">
+        <h3 class="title">
+            Bizning mahsulotlar
+        </h3>
+        <div class="type">
+            <div class="container">
+                <ul class="type-list">
+                    <li>
+                        <button class="type-list-button active" data-btn-order="0">
+                            Barchasi
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="card-wrapper">
+        <div class="container wrapper-products">
+            
+        </div>
+    </section>
+    <section class="about-process">
+        <div class="container">
+            <div class="videos" id="video-wrapper" >
+                <div class="video">
+                    <h3>Memoriform</h3>
+                    <div class="video-wrapper">
+                        <video poster="./images/1-video.png" class="video-player" data-video-order="0">
+                            <source src="./images/video/kino.mp4">
+                        </video>
+                        <button class="play" data-btn-order="0">
+                            <img src="./images/icons/play-button.svg" alt="">
+                        </button>
+                    </div>
+                    <span>
+                        Lectus pellentesque senectus elit donec massa ipsum ultricies dui. Bibendum et enim fringilla
+                        tincidunt ligula non, condimentum nunc.
+                    </span>
+                </div>
+                <div class="video">
+                    <h3>Memoriform</h3>
+                    <div class="video-wrapper">
+                        <video poster="./images/2-video.png" class="video-player" data-video-order="1">
+                            <source src="./images/video/kino.mp4">
+                        </video>
+                        <button class="play" data-btn-order="1">
+                            <img src="./images/icons/play-button.svg" alt="">
+                        </button>
+                    </div>
+                    <span>
+                        Lectus pellentesque senectus elit donec massa ipsum ultricies dui. Bibendum et enim fringilla
+                        tincidunt ligula non, condimentum nunc.
+                    </span>
+                </div>
+                <div class="video">
+                    <h3>Memoriform</h3>
+                    <div class="video-wrapper">
+                        <video poster="./images/3-video.png" class="video-player" data-video-order="2">
+                            <source src="./images/video/kino.mp4">
+                        </video>
+                        <button class="play" data-btn-order="2">
+                            <img src="./images/icons/play-button.svg" alt="">
+                        </button>
+                    </div>
+                    <span>
+                        Lectus pellentesque senectus elit donec massa ipsum ultricies dui. Bibendum et enim fringilla
+                        tincidunt ligula non, condimentum nunc.
+                    </span>
+                </div>
+            </div>
+            <div class="some-info">
+                <div class="line">
+                    <div class="box">
+                        <h2>
+
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="some-info">
+                <div class="line">
+                    <div class="box">
+                        <h2>Dream Cloud kompaniyasi haqida</h2>
+                        <p>Penatibus viverra gravida rhoncus in. At turpis morbi ante tortor a est. Habitant adipiscing
+                            ut sed pulvinar tellus, ut urna, fermentum:
+                        </p>
+                        <ul class="card">
+                            <li>
+                                Penatibus viverra gravida rhoncus in.
+                            </li>
+                            <li>
+                                Dolor integer in interdum viverra risus dolor enim.
+                            </li>
+                            <li>
+                                Turpis senectus eu, eget aenean nulla pellentesque sed ut tempor.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="video-wrapper">
+                        <video poster='./images/4-video.png' data-video-order="3" class="video-player">
+                            <source src="./images/video/kino.mp4">
+                        </video>
+                        <button class="play" data-btn-order="3">
+                            <img src="./images/icons/play-button.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="video-wrapper">
+                        <video poster='./images/5-video.png' data-video-order="4" class="video-player">
+                            <source src="./images/video/kino.mp4">
+                        </video>
+                        <button class="play" data-btn-order="4">
+                            <img src="./images/icons/play-button.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="box">
+                        <h2>Dream Cloud kompaniyasi haqida</h2>
+                        <p>Penatibus viverra gravida rhoncus in. At turpis morbi ante tortor a est. Habitant adipiscing
+                            ut sed pulvinar tellus, ut urna, fermentum:
+                        </p>
+                        <ul class="card">
+                            <li>
+                                Penatibus viverra gravida rhoncus in.
+                            </li>
+                            <li>
+                                Dolor integer in interdum viverra risus dolor enim.
+                            </li>
+                            <li>
+                                Turpis senectus eu, eget aenean nulla pellentesque sed ut tempor.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="facts-about-us">
+        <div class="container">
+            <div class="cards-wrapper">
+                <div class="card">
+                    <img src="./images/1-pic.png" alt="">
+                    <div class="info-part">
+                        <h4>Yetkazib berish</h4>
+                        <p>Toshkent bo'ylab bepul o'lchov va etkazib berish</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/2-pic.png" alt="">
+                    <div class="info-part">
+                        <h4>Qo'llab-quvvatlash</h4>
+                        <p>Bizning qo'llab-quvvatlash xizmati sizga har qanday savolda yordam beradi va menejerlarning
+                        </p>
+                        <a href="tel: +998 97 144-24-42">+998 97 144-24-42</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/3-pic.png" alt="">
+                    <div class="info-part">
+                        <h4>Kafolat</h4>
+                        <p>Biz matraslarimiz uchun 8 yilgacha kafolat beramiz. Agar matras kamida 25 mm qisqartirilsa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="address">
+                <div class="info">
+                    <div class="box">
+                        <h2>Manzilimiz</h2>
+                        <div class="some">
+                            <p>Toshkent, Parkent ko'chasi, 176-uy</p>
+                            <span>Mo’ljal: Qoraqamish 2/1, Tursunxodjayeva ro’parasi, Milliy bog’ metro bekati.</span>
+                        </div>
+                        <a href="#">
+                            Geolokatsiya
+                        </a>
+                    </div>
+                    <div class="carousel-address">
+                        <div>
+                            <img src="./images/carousel.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/carousel.png" alt="">
+                        </div>
+                        <div>
+                            <img src="./images/carousel.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <section id="manzil" class="address">
+                <div class="container">
+                    <h2 class="address-inner__title">Manzilimiz</h2>
+                    <div class="address-inner">
+                        
+                    </div>
+                </div>
+            </section>
+
+            
+        </div>
+    </section>
+    <section class="save-number">
+        <div class="container">
+            <div class="form-data ">
+                <div class="left">
+                    <h3>Sizni qiziqtirdimi?</h3>
+                    <span>Raqamingizni qoldiring, biz sizga yana qo'ng'iroq qilamiz</span>
+                </div>
+                <div class="right">
+                    <form id="call-leter">
+                        <div class="input-wrapper">
+                            <input type="number" id="code" placeholder="+998" disabled>
+                            <input type="number" id="number" minlength="9"  maxlength="10" placeholder="Raqamingizni yozing" required>
+                        </div>
+                        <button type="submit" id="submit-call"  class="btn-active">
+                            Yuborish
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="message">
+                <h2>Arizangiz muvaffaqiyatli <br> qabul qilindi ✅</h2>
+                <p>Siz bilan tez orada bog’lanamiz 😊</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <ul class="linkers">
+                    <li>
+                        <a href="#">Biz haqimizda</a>
+                    </li>
+                    <li>
+                        <a href="#">Katalog</a>
+                    </li>
+                    <li>
+                        <a href="#">Aksiya</a>
+                    </li>
+                    <li>
+                        <a href="#">Aksiya</a>
+                    </li>
+                </ul>
+                <ul class="social-networks">
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/facebook.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/twitter.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/vimeo.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/icons/youtube.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2021 Dream Cloud. Barcha huquqlar himoyalangan.</p>
+                <a href="#intro" class="arrow-top">
+                    <img src="./images/icons/arrow-top.svg" alt="">
+                </a>
+                <img src="./images/vizitka.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <a href="#intro" class="to-top">
+        <img src="./images/icons/arrow-top-light.svg" alt="">
+    </a>
+
+    <template class="address-left-template">    
+        <div class="address-flex">
+            <div class="address-inner__left">
+                <address class="address-inner__address">
+                    Toshkent, Parkent ko'chasi, 176-uy  
+                </address>
+                <p >
+                    <address class="address-inner__destination">Mo’ljal: Qoraqamish 2/1, Tursunxodjayeva ro’parasi, Milliy bog’ metro bekati.
+                    </address>
+                </p>
+                <a class="address-inner__btn btn btn-white" href="https://goo.gl/maps/9mFFUASXNDqhAgc57"
+                    target="_blank">
+                    Geolokatsiya
+                </a>
+            </div>
+    
+            <div class="address-inner__right">
+                <div class="address-inner__right-carousel">
+                 
+                </div>
+            </div>
+        </div>
+        
+    </template>
+    <template class="address-carousel-template">
+        <div>
+            <img width="525" height="320" class="address-carousel-img" src="https://picsum.photos/id/100/525/320/" alt="">
+        </div>
+    </template>
+
+    <template class="my-carousel-temp">
+        <div class="my-carousel__box">
+            <div class="hero-inner__content">
+                <h1 class="hero-inner__title">Kechalari sokin dam oling</h1>
+                <a class="btn btn-white btn-categories" href="#katalog">Kategoriyalar</a>
+            </div>
+            <img width="700" height="380" class="my-carousel__img" src="https://picsum.photos/id/25/700/380/" alt="">
+        </div>
+    </template>
+
+    <script src="./libs/jquery.min.js"></script>
+    <script src="./libs/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./scripts/slider.js"></script>
+    <script src="./scripts/request.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>

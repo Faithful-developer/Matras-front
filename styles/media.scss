@@ -1,0 +1,276 @@
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .header-mobile {
+        position: relative;
+        z-index: 9;
+        display: block;
+
+        .container {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+
+            .burger-btn {
+                background: transparent;
+                border: none;
+
+                &-img {
+                    transition: all ease 0.5s;
+
+                    &.active {
+                        display: inline-block;
+                    }
+
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .mobile-menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        padding: 100px 0;
+        z-index: 8;
+        height: 100vh;
+        top: 0;
+        left: -100%;
+        background: #EABF9F;
+        transition: all ease 0.5s;
+
+        &.active {
+            left: 0;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                a {
+                    text-decoration: none;
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #01384D;
+                    padding: 15px 0;
+                    display: inline-block;
+                }
+            }
+        }
+
+        .btn {
+            margin-top: 20px;
+            color: #01384D;
+            background: #FFFFFF;
+            border: 2px solid #01384D;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 14px 28px;
+        }
+
+        .phone-link {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background: #FFFFFF;
+            padding: 30px 0;
+
+            a {
+                img {
+                    margin-right: 10px;
+                }
+
+                display: flex;
+                text-decoration: none;
+                align-items: center;
+                font-size: 18px;
+                line-height: 18px;
+                color: #01384D;
+            }
+        }
+    }
+
+    .intro {
+        height: 100vh;
+
+        .container {
+            height: 80%;
+
+            .intro-slider {
+                width: 100%;
+                height: 100%;
+
+                .slick-box {
+                    height: 80vh;
+
+                    h1 {
+                        font-size: 41px;
+                        max-width: 70%;
+                        line-height: 55px;
+                    }
+
+                    img {
+                        top: 0;
+                        bottom: 0;
+                        margin: auto 0;
+                        max-width: 100%;
+                    }
+
+                    .btn {
+                        position: absolute;
+                        bottom: 150px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .statistics {
+        .container {
+            .wrapper {
+                .box {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .products {
+        .type {
+            .container {
+                .type-list {
+                    overflow-x: scroll;
+                }
+            }
+        }
+    }
+
+    .card-wrapper {
+        .container {
+            .card {
+                .img-section{
+                    img{
+                        width: 288px;
+                        height: 133px;
+                        object-fit: cover;
+                    }
+                }
+                flex-direction: column;
+                .info-section{
+                    max-width: 100%;
+                }
+                .some-info {
+                    .box {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    .about-process {
+        .some-info {
+            .line {
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .video-wrapper {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .facts-about-us {
+        .cards-wrapper{
+            flex-direction: column;
+            align-items: center;
+            .card{
+                margin: 20px 0;
+            }
+        }
+        .address{
+            .info{
+                flex-direction: column-reverse;
+                align-items: center;
+                .box{
+                    display: flex;
+                    text-align: center;
+                    flex-direction: column !important;
+                    align-items: center !important;
+
+                }
+            }
+        }
+    }
+
+    .save-number {
+        .form-data{
+            flex-direction: column;
+            .left{
+                width: 100% !important;
+                text-align: left;
+                margin-bottom: 20px;
+            }
+            .right{
+                max-width: 100%;
+                form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    button{
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        .container{
+            .footer-top{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .footer-bottom{
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                p{
+                    margin-top: 20px;
+                }
+                a{
+                    display: none;
+                }
+            }
+        }
+    }
+    .to-top{
+        display: inline-block;
+        position: fixed;
+        bottom: 30px;
+        z-index: -4;
+        right: 30px;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #01384D;
+        border-radius: 50%;
+        &.active{
+            z-index: 100;
+        }
+    }
+}
