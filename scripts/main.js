@@ -30,7 +30,7 @@ let callLeter = document.querySelector('#submit-call');
 let numberInput = document.querySelector('#number');
 let typeList = document.querySelector('.type-list');
 let StatWrapper = document.getElementById('statistic-wrapper');
-let videoWrapper = document.getElementById('video-wrapper')
+let videoWrapper = document.getElementById('video-wrapper');
 
 window.addEventListener('load', function (e) {
     e.preventDefault();
